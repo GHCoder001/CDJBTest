@@ -1,0 +1,7 @@
+C:\Users\Cornelius.Davis\source\repos\CDJBTest\Models\bin\Debug\netstandard2.0\BusinessModels.deps.json
+C:\Users\Cornelius.Davis\source\repos\CDJBTest\Models\bin\Debug\netstandard2.0\BusinessModels.dll
+C:\Users\Cornelius.Davis\source\repos\CDJBTest\Models\bin\Debug\netstandard2.0\BusinessModels.pdb
+C:\Users\Cornelius.Davis\source\repos\CDJBTest\Models\obj\Debug\netstandard2.0\BusinessModels.AssemblyInfoInputs.cache
+C:\Users\Cornelius.Davis\source\repos\CDJBTest\Models\obj\Debug\netstandard2.0\BusinessModels.AssemblyInfo.cs
+C:\Users\Cornelius.Davis\source\repos\CDJBTest\Models\obj\Debug\netstandard2.0\BusinessModels.dll
+C:\Users\Cornelius.Davis\source\repos\CDJBTest\Models\obj\Debug\netstandard2.0\BusinessModels.pdb

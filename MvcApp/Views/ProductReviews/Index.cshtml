@@ -1,0 +1,33 @@
+﻿@model Models.ProductReview
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Product Reviews</title>
+    <styles>
+        .reviewsContainer{
+        height: 200px; 
+        width: 80%;
+        display: inline-block;
+        overflow-y: scroll;
+        border: 1px solid black;
+        }
+    </styles>
+</head>
+<body>
+    <div class="reviewsContainer">
+        @{await Html.RenderPartialAsync("_Reviews", Model);}
+    </div>
+
+    <div class="createContainer">
+        <partial name="~/Views/ProductReviews/_CreateReview.cshtml" />
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,59 @@
+﻿@model Models.ProductReview
+
+<h4>ProductReviewModel</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="_CreateReviewView">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="ReviewerId" class="control-label"></label>
+                <input asp-for="ReviewerId" class="form-control" />
+                <span asp-validation-for="ReviewerId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ASIN" class="control-label"></label>
+                <input asp-for="ASIN" class="form-control" />
+                <span asp-validation-for="ASIN" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ReviewerName" class="control-label"></label>
+                <input asp-for="ReviewerName" class="form-control" />
+                <span asp-validation-for="ReviewerName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ReviewText" class="control-label"></label>
+                <input asp-for="ReviewText" class="form-control" />
+                <span asp-validation-for="ReviewText" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Overall" class="control-label"></label>
+                <input asp-for="Overall" class="form-control" />
+                <span asp-validation-for="Overall" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Summary" class="control-label"></label>
+                <input asp-for="Summary" class="form-control" />
+                <span asp-validation-for="Summary" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="UnixReviewTime" class="control-label"></label>
+                <input asp-for="UnixReviewTime" class="form-control" />
+                <span asp-validation-for="UnixReviewTime" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ReviewTime" class="control-label"></label>
+                <input asp-for="ReviewTime" class="form-control" />
+                <span asp-validation-for="ReviewTime" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+

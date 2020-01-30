@@ -1,0 +1,71 @@
+﻿@model IEnumerable<Models.ProductReview>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => "ReviewerId")
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => "ProductId")
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => "ReviewerName")
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => "ReviewText")
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => "Overall")
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => "Summary")
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => "UnixReviewTime")
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => "ReviewTime")
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.ReviewerId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ASIN)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ReviewerName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ReviewText)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Overall)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Summary)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.UnixReviewTime)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ReviewTime)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
+                @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
+                @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
